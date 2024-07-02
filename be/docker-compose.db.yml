@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: "${POSTGRES_NAME}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASS}"
+    ports:
+      - "${POSTGRES_PORT}:${POSTGRES_PORT}"
+    volumes: 
+      - db:/var/lib/postgresql/data
+volumes:
+  db:
+    driver: local

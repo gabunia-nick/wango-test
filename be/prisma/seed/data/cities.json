@@ -1,0 +1,23 @@
+[
+  {
+    "name": "New York",
+    "code": "NY",
+    "areas": [
+      {
+        "name": "Manhattan"
+      },
+      {
+        "name": "Queens"
+      }
+    ]
+  },
+  {
+    "name": "Washington",
+    "code": "WDC",
+    "areas": [
+      {
+        "name": "Capitol"
+      }
+    ]
+  }
+]
